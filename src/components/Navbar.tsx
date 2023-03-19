@@ -1,9 +1,30 @@
 import styles from "../styles/navbar.module.scss";
+import { Burger } from "@mantine/core";
 
-const Navbar = () => {
+type navBarProps = {
+  menuStatus: boolean;
+  menu: {
+    open: Function;
+    close: Function;
+    toggle: Function;
+  };
+};
+
+const Navbar = ({ menu, menuStatus }: navBarProps) => {
   return (
     <div id={styles.navbar}>
       <div className={styles.logo}>Sina</div>
+      <Burger
+        opened={menuStatus}
+        onClick={() => {
+          menu.toggle();
+        }}
+        size={50}
+        color="rgb(0,250,154)"
+        sx={{
+          marginRight: "2.5rem",
+        }}
+      />
     </div>
   );
 };
