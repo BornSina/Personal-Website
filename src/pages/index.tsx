@@ -10,7 +10,15 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="Your Apps Description" />
       </Head>
-      <main className={styles.main}></main>
+      <main className={styles.main}>
+        <div className={styles.avatarContainer}>
+          <img
+            className={styles.avatar}
+            src={"/images/Sina.jpeg"}
+            alt="Sina at the Vessel in Hudson Yards, New York."
+          />
+        </div>
+      </main>
     </>
   );
 };
