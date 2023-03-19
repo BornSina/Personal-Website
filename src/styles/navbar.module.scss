@@ -1,0 +1,19 @@
+@use "colors";
+
+#navbar {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+
+  .logo {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-left: 2.5rem;
+    color: colors.$primary-green;
+
+    &:hover {
+      text-shadow: 0px 0px 0.25rem colors.$primary-green;
+    }
+  }
+}

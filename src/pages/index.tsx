@@ -10,7 +10,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="Your Apps Description" />
       </Head>
-      <main className={styles.main}>Sina Nikmaram</main>
+      <main className={styles.main}></main>
     </>
   );
 };
