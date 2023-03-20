@@ -18,6 +18,18 @@ const Home: NextPage = () => {
             alt="Sina at the Vessel in Hudson Yards, New York."
           />
         </div>
+        <section id={styles.aboutMe}>
+          <h4 id={styles.greeting}>Hi, my name is</h4>
+          <h1 id={styles.name}>Sina Nikmaram.</h1>
+          <p className={styles.intro}>
+            I'm a software engineer specializing in the development of scalable
+            solutions to complex, real-world problems.
+          </p>
+          <p className={styles.intro}>
+            Currently, I'm focused on modernizing enterprise sustainability
+            solutions with clients at IBM.
+          </p>
+        </section>
       </main>
     </>
   );

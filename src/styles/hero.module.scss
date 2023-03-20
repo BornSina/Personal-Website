@@ -1,25 +1,49 @@
 @use "colors";
 
 .main {
-  font-size: 3rem;
-  font-weight: 900;
-  color: mediumspringgreen;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100vh;
-  padding-top: 15rem;
+  padding-top: 12.5rem;
 
   .avatarContainer {
     width: 22.5rem;
     height: 22.5rem;
     border-radius: 100%;
     overflow: hidden;
+    margin-bottom: 5rem;
 
     .avatar {
       width: 100%;
       height: 100%;
       object-fit: cover;
+    }
+  }
+
+  #aboutMe {
+    width: 85vw;
+    height: 27.5rem;
+
+    #greeting {
+      color: colors.$primary-green;
+      font-size: 2rem;
+      font-weight: 500;
+      font-family: "IBM Plex Mono";
+      margin-bottom: 0.5rem;
+    }
+
+    #name {
+      color: colors.$darkmode-font;
+      font-size: 3.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .intro {
+      color: colors.$darkmode-font;
+      font-size: 2rem;
+      line-height: 3rem;
+      margin-bottom: 2rem;
     }
   }
 }
