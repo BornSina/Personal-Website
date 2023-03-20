@@ -4,12 +4,12 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  height: 100vh;
   padding: 10rem 7.5vw 0rem 7.5vw;
 
   .avatarContainer {
     width: 22.5rem;
     height: 22.5rem;
+    min-height: 22.5rem;
     border-radius: 100%;
     overflow: hidden;
     margin-bottom: 5rem;

@@ -44,7 +44,7 @@ const Home: NextPage = () => {
               width: "15rem",
               height: "4rem",
               fontSize: "1.5rem",
-              marginTop: "1rem",
+              margin: "1rem 0rem 5rem 0rem",
             }}
           >
             Resume

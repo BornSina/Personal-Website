@@ -3,6 +3,7 @@
 #navbar {
   width: 100vw;
   height: 10vh;
+  min-height: 8rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -11,6 +12,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  border: solid 1px white;
 
   .logo {
     font-size: 3rem;
