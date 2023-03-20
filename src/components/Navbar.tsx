@@ -20,7 +20,7 @@ const Navbar = ({ menu, menuStatus }: navBarProps) => {
           menu.toggle();
         }}
         size={50}
-        color={menuStatus ? "crimson" : "mediumspringgreen"}
+        color={"mediumspringgreen"}
         sx={{
           marginRight: "2.5rem",
         }}

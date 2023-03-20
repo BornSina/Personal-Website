@@ -1,11 +1,11 @@
 @use "colors";
 
-.main {
+.hero {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   height: 100vh;
-  padding-top: 12.5rem;
+  padding: 10rem 7.5vw 0rem 7.5vw;
 
   .avatarContainer {
     width: 22.5rem;
@@ -13,6 +13,7 @@
     border-radius: 100%;
     overflow: hidden;
     margin-bottom: 5rem;
+    align-self: center;
 
     .avatar {
       width: 100%;
@@ -21,29 +22,24 @@
     }
   }
 
-  #aboutMe {
-    width: 85vw;
-    height: 27.5rem;
+  #greeting {
+    color: colors.$primary-green;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: "IBM Plex Mono";
+    margin-bottom: 0.5rem;
+  }
 
-    #greeting {
-      color: colors.$primary-green;
-      font-size: 2rem;
-      font-weight: 500;
-      font-family: "IBM Plex Mono";
-      margin-bottom: 0.5rem;
-    }
+  #name {
+    color: colors.$darkmode-font;
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+  }
 
-    #name {
-      color: colors.$darkmode-font;
-      font-size: 3.5rem;
-      margin-bottom: 2rem;
-    }
-
-    .intro {
-      color: colors.$darkmode-font;
-      font-size: 2rem;
-      line-height: 3rem;
-      margin-bottom: 2rem;
-    }
+  .sentence {
+    color: colors.$darkmode-font;
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-bottom: 2rem;
   }
 }
