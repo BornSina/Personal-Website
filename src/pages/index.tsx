@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import styles from "../styles/hero.module.scss";
 import Button from "@mui/material/Button";
+import { TbCloudDownload } from "react-icons/tb";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 const theme = createTheme({
@@ -38,8 +39,9 @@ const Home: NextPage = () => {
           <Button
             variant="outlined"
             color="success"
+            startIcon={<TbCloudDownload />}
             sx={{
-              width: "12.5rem",
+              width: "15rem",
               height: "4rem",
               fontSize: "1.5rem",
               marginTop: "1rem",
