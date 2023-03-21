@@ -3,6 +3,7 @@ import type { AppProps } from "next/app";
 import Head from "next/head";
 import Navbar from "../components/Navbar";
 import { useDisclosure } from "@mantine/hooks";
+import { Drawer } from "@mantine/core";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [menuStatus, handlers] = useDisclosure(false);
@@ -17,6 +18,14 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Head>
       <Navbar menuStatus={menuStatus} menu={handlers} />
       <Component {...pageProps} />
+      <Drawer
+        opened={menuStatus}
+        onClose={() => {}}
+        zIndex={5}
+        withCloseButton={false}
+        size={"xl"}
+        transitionProps={{ duration: 250, transition: "slide-left" }}
+      ></Drawer>
     </>
   );
 }

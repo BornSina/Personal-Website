@@ -23,6 +23,7 @@ const Navbar = ({ menu, menuStatus }: navBarProps) => {
         color={"mediumspringgreen"}
         sx={{
           marginRight: "2.5rem",
+          zIndex: 10,
         }}
       />
     </div>
