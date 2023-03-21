@@ -54,6 +54,23 @@
   }
 
   .resume {
-    transition-delay: 900ms !important;
+    animation: fadeUp;
+    animation-duration: 1.3s;
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0%;
+    transform: translateY(2rem);
+  }
+
+  75% {
+    opacity: 0%;
+    transform: translateY(2rem);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateY(0rem);
   }
 }

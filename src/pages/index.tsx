@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import Image from "next/image";
 import styles from "../styles/hero.module.scss";
 import Button from "@mui/material/Button";
 import { HiOutlineDocumentMagnifyingGlass } from "react-icons/hi2";
@@ -19,8 +20,6 @@ const Home: NextPage = () => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("slideUp");
-        } else {
-          entry.target.classList.remove("slideUp");
         }
       });
     });
@@ -35,10 +34,13 @@ const Home: NextPage = () => {
     <>
       <section className={styles.hero}>
         <div className={styles.avatarContainer}>
-          <img
+          <Image
             className={styles.avatar}
-            src={"/images/Sina.jpeg"}
             alt="Sina at the Vessel in Hudson Yards, New York."
+            src={"/images/Sina.webp"}
+            width={2000}
+            height={2000}
+            priority
           />
         </div>
 
@@ -62,13 +64,12 @@ const Home: NextPage = () => {
             variant="outlined"
             color="success"
             startIcon={<HiOutlineDocumentMagnifyingGlass size={25} />}
-            className={`${styles.resume} hidden`}
+            className={`${styles.resume}`}
             sx={{
               width: "15rem",
-              height: "5rem",
-              fontSize: "1.75rem",
+              height: "4rem",
+              fontSize: "1.6rem",
               margin: "0rem 0rem 5rem 0rem",
-              transitionDelay: "450ms !important",
             }}
           >
             Resume
