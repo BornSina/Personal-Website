@@ -22,8 +22,12 @@ body {
 }
 
 .mantine-Drawer-inner {
-  height: 90vh;
+  height: calc(100vh - 7.5rem);
   margin-top: 7.5rem;
+}
+
+.mantine-Drawer-content {
+  background-color: colors.$darkmode-bg;
 }
 
 // <-------------------- Animation Classes --------------------> //
