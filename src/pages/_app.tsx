@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Head>
         <title>Sina Nikmaram</title>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="description" content="Your Apps Description" />
+        <meta name="description" content="Sina Nikmaram's Portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Navbar menuStatus={menuStatus} menu={handlers} />

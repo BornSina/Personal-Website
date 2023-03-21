@@ -20,3 +20,24 @@ body {
   font-size: 62.5%;
   background-color: colors.$darkmode-bg;
 }
+
+// <-------------------- Animation Classes --------------------> //
+
+.hidden {
+  opacity: 0;
+  transform: translateY(2rem);
+  transition: all 500ms;
+}
+
+.slideUp {
+  opacity: 1;
+  transform: translateY(0rem);
+}
+
+// <-------------------- Media Queries --------------------> //
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}

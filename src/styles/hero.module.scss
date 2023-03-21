@@ -27,18 +27,33 @@
     font-weight: 500;
     font-family: "IBM Plex Mono";
     margin-bottom: 0.5rem;
+    transition-delay: 100ms;
   }
 
   #name {
     color: colors.$darkmode-font;
     font-size: 3.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+    transition-delay: 200ms;
   }
 
   .sentence {
     color: colors.$darkmode-font;
-    font-size: 2rem;
+    font-size: 1.75rem;
     line-height: 3rem;
+  }
+
+  .sentence1 {
+    transition-delay: 600ms !important;
     margin-bottom: 2rem;
+  }
+
+  .sentence2 {
+    transition-delay: 750ms !important;
+    margin-bottom: 4rem;
+  }
+
+  .resume {
+    transition-delay: 900ms !important;
   }
 }
