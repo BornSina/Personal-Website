@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         onClose={() => {}}
         zIndex={5}
         withCloseButton={false}
-        size={"xl"}
+        size={"100%"}
         transitionProps={{ duration: 250, transition: "slide-left" }}
       ></Drawer>
     </>
