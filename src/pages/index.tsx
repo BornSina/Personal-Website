@@ -65,6 +65,9 @@ const Home: NextPage = () => {
             color="success"
             startIcon={<HiOutlineDocumentMagnifyingGlass size={25} />}
             className={`${styles.resume}`}
+            onClick={() => {
+              window.open("/assets/Sina-Resume.pdf", "_blank");
+            }}
             sx={{
               width: "15rem",
               height: "4rem",
