@@ -56,7 +56,7 @@ const Home: NextPage = () => {
         </p>
         <p className={`${styles.sentence} ${styles.sentence2} hidden`}>
           Currently, I'm focused on modernizing enterprise sustainability
-          solutions with clients at IBM.
+          operations with clients at IBM.
         </p>
 
         <ThemeProvider theme={theme}>
