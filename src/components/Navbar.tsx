@@ -1,5 +1,6 @@
 import styles from "../styles/navbar.module.scss";
 import { Burger } from "@mantine/core";
+import { useEffect, useState } from "react";
 
 type navBarProps = {
   menuStatus: boolean;
@@ -11,8 +12,39 @@ type navBarProps = {
 };
 
 const Navbar = ({ menu, menuStatus }: navBarProps) => {
+  const [showNavbar, setShowNavbar] = useState(true);
+
+  useEffect(() => {
+    let prevScrollPos = window.pageYOffset;
+
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      const difference = prevScrollPos - currentScrollPos;
+
+      if (currentScrollPos > 25 && difference < 0) {
+        setShowNavbar(false);
+      } else {
+        setShowNavbar(true);
+      }
+
+      prevScrollPos = currentScrollPos;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div id={styles.navbar}>
+    <div
+      id={styles.navbar}
+      style={{
+        transform: showNavbar ? "translateY(0)" : "translateY(-7.5rem)",
+        transition: "transform .15s ease-in-out",
+      }}
+    >
       <div className={styles.logo}>Sina</div>
       <Burger
         opened={menuStatus}
