@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
-import Hero from "../components/HeroSection";
+import Hero from "../components/Hero";
 import { useEffect } from "react";
+import AboutMe from "../components/About";
 
 const Home: NextPage = () => {
   useEffect(() => {
@@ -21,6 +22,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Hero />
+      <AboutMe />
     </>
   );
 };
