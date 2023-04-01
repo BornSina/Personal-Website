@@ -9,7 +9,7 @@ export default class _Document extends Document {
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
-            href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,500;0,700;1,500;1,700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Great+Vibes&family=IBM+Plex+Mono:wght@500&family=Merienda:wght@500&family=Open+Sans&display=swap"
             rel="stylesheet"
           />
         </Head>
