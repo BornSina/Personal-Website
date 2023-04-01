@@ -26,17 +26,17 @@ const HeroSection = () => {
         />
       </div>
 
-      <h4 id={styles.greeting} className="hidden">
+      <h4 id={styles.greeting} className="hiddenBottom">
         Hi, my name is
       </h4>
-      <h1 id={styles.name} className="hidden">
+      <h1 id={styles.name} className="hiddenBottom">
         Sina Nikmaram.
       </h1>
-      <p className={`${styles.sentence} ${styles.sentence1} hidden`}>
+      <p className={`${styles.sentence} ${styles.sentence1} hiddenBottom`}>
         I'm a software engineer specializing in the development of scalable
         solutions for complex, real-world problems.
       </p>
-      <p className={`${styles.sentence} ${styles.sentence2} hidden`}>
+      <p className={`${styles.sentence} ${styles.sentence2} hiddenBottom`}>
         Currently, I'm focused on modernizing enterprise sustainability
         operations with clients at IBM.
       </p>
@@ -54,7 +54,7 @@ const HeroSection = () => {
             width: "15rem",
             height: "4rem",
             fontSize: "1.6rem",
-            margin: "0rem 0rem 5rem 0rem",
+            margin: "0rem 0rem 10rem 0rem",
           }}
         >
           Resume
