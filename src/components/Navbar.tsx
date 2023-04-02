@@ -21,7 +21,7 @@ const Navbar = ({ menu, menuStatus }: navBarProps) => {
       const currentScrollPos = window.pageYOffset;
       const difference = prevScrollPos - currentScrollPos;
 
-      if (currentScrollPos > 30 && difference < 0) {
+      if (currentScrollPos > 35 && difference < 0) {
         setShowNavbar(false);
       } else {
         setShowNavbar(true);
