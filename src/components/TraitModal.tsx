@@ -32,7 +32,7 @@ const TraitModal = ({ title, content, color, font }: TraitModalProps) => {
         <Button
           variant="outlined"
           color="primary"
-          className={styles.traitButton}
+          className={`${styles.traitButton} hiddenLeft`}
           onClick={() => {
             open();
           }}
