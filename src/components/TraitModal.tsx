@@ -24,7 +24,31 @@ const TraitModal = ({ title, content, color, font }: TraitModalProps) => {
 
   return (
     <>
-      <Modal opened={opened} onClose={close} title={title} centered>
+      <Modal
+        opened={opened}
+        onClose={close}
+        title={<h1 style={{ fontSize: "2.5rem" }}>{title}</h1>}
+        styles={{
+          header: {
+            height: "5rem",
+            backgroundColor: "rgb(39, 51, 75)",
+            color: "white",
+          },
+          content: {
+            backgroundColor: "rgb(39, 51, 75)",
+            color: "white",
+            fontSize: "1.3rem",
+          },
+          close: {
+            width: "2.5rem",
+            svg: {
+              width: "3rem",
+              height: "3rem",
+            },
+          },
+        }}
+        centered
+      >
         {content}
       </Modal>
 
