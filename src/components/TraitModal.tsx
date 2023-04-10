@@ -7,14 +7,20 @@ import Image from "next/image";
 
 interface TraitModalProps {
   title: string;
-  content: string;
   color: string;
+  content: string[];
+  skills: string[];
   font?: string;
 }
 
-const TraitModal = ({ title, content, color, font }: TraitModalProps) => {
+const TraitModal = ({
+  title,
+  color,
+  content,
+  skills,
+  font,
+}: TraitModalProps) => {
   const [opened, { open, close }] = useDisclosure(false);
-
   const theme = createTheme({
     palette: {
       primary: {
@@ -35,13 +41,15 @@ const TraitModal = ({ title, content, color, font }: TraitModalProps) => {
             backgroundColor: "rgb(39, 51, 75)",
             color: "white",
             fontSize: "1.3rem",
-            height: "40rem",
+            height: "65rem",
+            paddingTop: ".5rem",
           },
           header: {
             height: "5rem",
             backgroundColor: "rgb(39, 51, 75)",
             color: "white",
-            marginBottom: "1rem",
+            marginBottom: ".75rem",
+            zIndex: 2,
           },
           close: {
             width: "2.5rem",
@@ -77,10 +85,29 @@ const TraitModal = ({ title, content, color, font }: TraitModalProps) => {
         </div>
         <div
           style={{
-            paddingTop: "2rem",
+            padding: "2.25rem 1.2rem 1rem 1.2rem",
+            fontSize: "1.6rem",
           }}
         >
-          {content}
+          {content.map((sentence, i) => {
+            return (
+              <div
+                key={i}
+                style={{ marginBottom: "2rem", lineHeight: "2.5rem" }}
+              >
+                {sentence}
+              </div>
+            );
+          })}
+          <ul>
+            {skills.map((benefit, i) => {
+              return (
+                <li key={i} style={{ margin: "0rem 0rem 1.5rem 2rem" }}>
+                  {benefit}
+                </li>
+              );
+            })}
+          </ul>
         </div>
       </Modal>
 
