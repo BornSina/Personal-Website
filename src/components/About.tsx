@@ -60,7 +60,7 @@ const About = () => {
       color: "rgb(255,110,175)",
       content: [
         '"Individually, we are one drop. Together, we are an ocean."',
-        "As a collaborator, I focus on enhancing the groups dynamic combination of skills and knowledge that surpasses our individual potential through:",
+        "As a collaborator, I focus on enhancing a teams dynamic combination of skills and knowledge that surpasses our individual potential through:",
       ],
       skills: [
         "Active listening",

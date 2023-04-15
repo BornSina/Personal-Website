@@ -34,7 +34,9 @@ const TraitModal = ({
       <Modal
         opened={opened}
         onClose={close}
-        title={<h1 style={{ fontSize: "2.5rem" }}>{title}</h1>}
+        title={
+          <div style={{ fontSize: "2.5rem", fontWeight: "600" }}>{title}</div>
+        }
         size={"xl"}
         styles={{
           content: {
