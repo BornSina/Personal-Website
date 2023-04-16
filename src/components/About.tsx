@@ -72,12 +72,15 @@ const About = () => {
     },
     Passionate: {
       color: "rgb(255,114,80)",
-      content: ["I am passionate"],
+      content: [
+        "Passionate people drive transformative change because of their unwavering commitment to overcoming obstacles in order to achieve their goals.",
+        "My passion to help solve some of societies greatest challenges provides me with a:",
+      ],
       skills: [
-        "Understand a businesses competitve landscape",
-        "Understand the regulatroy Landscape",
-        "Improve Customer Satisfaction",
-        "Optimize decision making and ROI",
+        "Deep curiosity",
+        "Growth mindset",
+        "Resilient spirit",
+        "Inspiring energy",
       ],
       font: "400 2rem Fondamento !important",
     },
