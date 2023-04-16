@@ -21,10 +21,9 @@ const About = () => {
         "Changing the world is a difficult task, but I seek to drive transformational change and innovation through:",
       ],
       skills: [
-        "Out of the box thinking",
+        "Scalable Solutions",
         "Clearly defined objectives",
         "Measurable results",
-        "Scalable Solutions",
       ],
       font: "400 1.55rem Alfa Slab One !important",
     },
@@ -35,7 +34,6 @@ const About = () => {
         "My experiences helped me develop a unique set of skills that enable the success through:",
       ],
       skills: [
-        "Optimized efficiency",
         "Data-driven decision making",
         "Operational and financial alignment",
         "Competitve and regulatory analyses",
@@ -50,7 +48,6 @@ const About = () => {
       ],
       skills: [
         "Trust and transparency",
-        "People-centric design",
         "Support and development",
         "Vision and perspective",
       ],
@@ -65,7 +62,6 @@ const About = () => {
       skills: [
         "Active listening",
         "Open mindedness",
-        "Improved workload management",
         "Empathy and adaptability",
       ],
       font: "400 1.8rem Open Sans !important",
@@ -76,22 +72,19 @@ const About = () => {
         "Passionate people drive transformative change because of their unwavering commitment to overcoming obstacles in order to achieve their goals.",
         "My passion to help solve some of societies greatest challenges provides me with a:",
       ],
-      skills: [
-        "Deep curiosity",
-        "Growth mindset",
-        "Resilient spirit",
-        "Inspiring energy",
-      ],
+      skills: ["Deep curiosity", "Resilient spirit", "Inspiring energy"],
       font: "400 2rem Fondamento !important",
     },
     Creative: {
       color: "rgb(0,250,154)",
-      content: ["I am creative"],
+      content: [
+        "Naturally creative individuals can be identified by their ability to generate novel ideas and bring them to life.",
+        "I channel my creative energy to drive change and explore new solutions through:",
+      ],
       skills: [
-        "Understand a businesses competitve landscape",
-        "Understand the regulatroy Landscape",
-        "Improve Customer Satisfaction",
-        "Optimize decision making and ROI",
+        "Out of the box thinking",
+        "Inventive problem-solving",
+        "Adaptable approaches",
       ],
       font: "400 1.85rem Shantell Sans !important",
     },
