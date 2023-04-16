@@ -74,23 +74,10 @@ const TraitModal = ({
         }}
         centered
       >
-        <div
-          style={{
-            display: "flex",
-            width: `100%`,
-            paddingTop: "56.25%",
-            overflow: "hidden",
-            position: "relative",
-          }}
-        >
+        <div className={styles.imageContainer}>
           <Image src={`/images/${title}.webp`} alt={title} fill />
         </div>
-        <div
-          style={{
-            padding: "2.25rem 1.2rem 1rem 1.2rem",
-            fontSize: "1.6rem",
-          }}
-        >
+        <div className={styles.contentContainer}>
           {content.map((sentence, i) => {
             return (
               <div

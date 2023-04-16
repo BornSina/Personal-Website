@@ -2,3 +2,16 @@
   font-size: 1.5rem;
   height: 5rem;
 }
+
+.imageContainer {
+  display: flex;
+  width: 100%;
+  padding-top: 56.25%;
+  overflow: hidden;
+  position: relative;
+}
+
+.contentContainer {
+  padding: 2.25rem 1.2rem 1rem 1.2rem;
+  font-size: 1.6rem;
+}
