@@ -1,17 +1,18 @@
 import type { NextPage } from "next";
-import Hero from "../components/Hero";
 import { useEffect } from "react";
+import Hero from "../components/Hero";
 import About from "../components/About";
+import Timeline from "../components/Timeline";
 
 const Home: NextPage = () => {
+  // Intersection Observer SlideUp Animations
   useEffect(() => {
     let hiddenBottomElements = document.querySelectorAll(".hiddenBottom");
     hiddenBottomElements.forEach((element) => {
       element.classList.add("slideUp");
     });
   }, []);
-
-  // Intersection Observer SlideRIght Animations
+  // Intersection Observer SlideRight Animations
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -31,6 +32,7 @@ const Home: NextPage = () => {
     <>
       <Hero />
       <About />
+      <Timeline />
     </>
   );
 };
