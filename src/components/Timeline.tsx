@@ -34,8 +34,11 @@ let timelineItems: timelineItem[] = [
   {
     role: "Software Engineering Resident",
     organization: "Hack Reactor",
-    timePeriod: "July 2020 - September 2020",
-    Achievements: [],
+    timePeriod: "June 2020 - September 2020",
+    Achievements: [
+      "Provided technical mentorship to 100+ students nationally, and guided them through learning technologies such as JavaScript, React, Express.js, MySQL, and MongoDB.",
+      "Organized 3+ tutoring sessions with students weekly. These sessions covered a range of full-stack web development concepts from primitive data types to integrations with 3rd party API’s.",
+    ],
   },
   {
     role: "Software Engineering Student",
@@ -75,7 +78,7 @@ const MyTimeline = () => {
             },
           },
           itemContent: {
-            marginLeft: "3rem",
+            marginLeft: "2rem",
           },
           itemBullet: {
             borderColor: "rgb(30, 144, 255) !important",
@@ -86,7 +89,7 @@ const MyTimeline = () => {
         {timelineItems.map((item, i) => {
           return (
             <Timeline.Item bulletSize={50} key={i}>
-              <Text italic color={"white"} size={31}>
+              <Text italic color={"white"} size={32}>
                 {item.role}
               </Text>
               <Text size={30} fw={700} sx={{ color: "mediumspringgreen" }}>
