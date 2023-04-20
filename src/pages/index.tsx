@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import { useEffect } from "react";
 import Hero from "../components/Hero";
 import About from "../components/About";
-import Timeline from "../components/Timeline";
+import MyTimeline from "../components/Timeline";
 
 const Home: NextPage = () => {
   // Intersection Observer SlideUp Animations
@@ -32,7 +32,7 @@ const Home: NextPage = () => {
     <>
       <Hero />
       <About />
-      <Timeline />
+      <MyTimeline />
     </>
   );
 };
