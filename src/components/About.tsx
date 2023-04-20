@@ -28,7 +28,7 @@ const About = () => {
       font: "400 1.55rem Alfa Slab One !important",
     },
     Strategic: {
-      color: "rgb(0,130,255)",
+      color: "rgb(30, 144, 255)",
       content: [
         "In game theory, strategy is defined as a set of decisions that players make to achieve their goals, while anticipating and influencing others.",
         "My experiences helped me develop a unique set of skills that enable the success through:",

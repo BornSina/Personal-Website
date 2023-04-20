@@ -61,8 +61,17 @@ const MyTimeline = () => {
             marginLeft: "1rem",
             paddingTop: "1.5rem",
           },
+          item: {
+            "::before": {
+              borderColor: "rgb(30, 144, 255) !important",
+            },
+          },
           itemContent: {
             marginLeft: "3rem",
+          },
+          itemBullet: {
+            borderColor: "rgb(30, 144, 255) !important",
+            background: "rgb(16, 26, 44) !important",
           },
         }}
       >
@@ -75,7 +84,7 @@ const MyTimeline = () => {
               <Text size={30} fw={700} sx={{ color: "mediumspringgreen" }}>
                 {item.organization}
               </Text>
-              <Text size={25} fw={500} sx={{ color: "RGB(145, 195, 172)" }}>
+              <Text size={25} fw={500} sx={{ color: "RGB(128, 191, 164)" }}>
                 {item.timePeriod}
               </Text>
               <ul
