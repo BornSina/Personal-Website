@@ -15,13 +15,21 @@ let timelineItems: timelineItem[] = [
     role: "Technology Engineer",
     organization: "IBM",
     timePeriod: "June 2022 - Present",
-    Achievements: [],
+    Achievements: [
+      "Lead Engineer on a collaboration with IBM Research to dynamically graph weighted industry relationships, over time, for a multi-national financial client.",
+      "Co-led an engagement with a public utility provider to leverage IBM's Maximo Asset Performance Monitoring (APM) solution to reduce service down-time by using real-time sensor data to predict circuit breaker failures.",
+      "Awarded Star Performer for the Client Engineering team at IBM's Technology Academy for Sustainability 2022.",
+    ],
   },
   {
     role: "Associate Cloud Engineer",
     organization: "IBM",
     timePeriod: "March 2021 - June 2022",
-    Achievements: [],
+    Achievements: [
+      "Deployed IBM MQ managers on an internet deprived Google GKE cluster for a global financial client modernizing messaging workloads to boost service resiliency.",
+      "Spoke at several virtual events to up-skill dozens of engineers on the technical deployment, and business value, of IBM's Maximo Application Suite.",
+      "Refactored a CLI tool with Python, shell scripts, and Docker for IBM Cloud Pak for Data installations on OpenShift.",
+    ],
   },
   {
     role: "Software Engineering Resident",
@@ -84,7 +92,11 @@ const MyTimeline = () => {
               <Text size={30} fw={700} sx={{ color: "mediumspringgreen" }}>
                 {item.organization}
               </Text>
-              <Text size={25} fw={500} sx={{ color: "RGB(128, 191, 164)" }}>
+              <Text
+                size={25}
+                fw={500}
+                sx={{ color: "RGB(128, 191, 164)", marginBottom: ".2rem" }}
+              >
                 {item.timePeriod}
               </Text>
               <ul
@@ -92,12 +104,19 @@ const MyTimeline = () => {
                   paddingTop: "1rem",
                   color: "white",
                   marginLeft: "2.25rem",
+                  paddingBottom: "1rem",
                   fontSize: "1.75rem",
                 }}
               >
                 {item.Achievements.map((achievement, i) => {
                   return (
-                    <li key={i} style={{ marginBottom: "1rem" }}>
+                    <li
+                      key={i}
+                      style={{
+                        marginBottom: "1.5rem",
+                        fontSize: "1.55rem",
+                      }}
+                    >
                       {achievement}
                     </li>
                   );
