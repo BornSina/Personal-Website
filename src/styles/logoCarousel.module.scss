@@ -1,0 +1,21 @@
+.logos {
+  overflow: hidden;
+  margin-top: -2rem;
+  padding-bottom: 5rem;
+  width: 100vw;
+  white-space: nowrap;
+
+  .logoSlide {
+    display: inline-block;
+    animation: slideLeft 7.5s linear infinite;
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
