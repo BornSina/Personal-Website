@@ -63,7 +63,7 @@ const MyTimeline = () => {
 
   return (
     <section id={styles.timeline}>
-      <SectionHead title={"My Timeline"} />
+      <SectionHead title={"Timeline"} />
       <Timeline
         active={active}
         lineWidth={12}

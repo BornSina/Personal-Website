@@ -92,11 +92,12 @@ const About = () => {
 
   return (
     <section id={styles.about}>
-      <SectionHead title={"About Me"} />
+      <SectionHead title={"About"} />
       <SimpleGrid
         cols={2}
         spacing={"xl"}
         breakpoints={[{ minWidth: "40rem", cols: 3 }]}
+        sx={{ paddingTop: "1.5rem" }}
       >
         {Object.keys(traits).map((trait, i) => {
           return (
