@@ -29,37 +29,37 @@ let techStack1: techStackRow = {
   ts: {
     height: "4.2rem",
     width: "4.2rem",
-    margin: "0rem 1rem -.1rem 1rem",
+    margin: "0rem 1rem -.1rem .8rem",
   },
   nodejs: {
     height: "4.75rem",
     width: "4.75rem",
-    margin: "0rem .9rem -.5rem 1.25rem",
+    margin: "0rem 1rem -.5rem 1rem",
   },
   react: {
     height: "6rem",
     width: "6rem",
-    margin: "0rem .4rem -1rem .5rem",
+    margin: "0rem 0rem -1rem .2rem",
   },
   sass: {
     height: "6rem",
     width: "6rem",
-    margin: "0rem .75rem -.9rem 1.5rem",
+    margin: "0rem .5rem -.9rem 1.5rem",
   },
   mui: {
     height: "6rem",
     width: "6rem",
-    margin: "0rem 1.5rem -1.2rem 1rem",
+    margin: "0rem 1.3rem -1.2rem 1rem",
   },
   tailwind: {
     height: "7rem",
     width: "7rem",
-    margin: "0rem .5rem -1.5rem 0rem",
+    margin: "0rem .25rem -1.5rem 0rem",
   },
   bootstrap: {
     height: "4.5rem",
     width: "6.5rem",
-    margin: "0rem .75rem -.25rem .75rem",
+    margin: "0rem .5rem -.25rem .75rem",
   },
   python: {
     height: "5.2rem",
