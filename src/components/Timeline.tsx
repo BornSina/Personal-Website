@@ -70,7 +70,7 @@ const MyTimeline = () => {
         styles={{
           root: {
             marginLeft: "1rem",
-            paddingTop: "1.5rem",
+            margin: "1.5rem 9vw 0rem 9vw",
           },
           item: {
             "::before": {

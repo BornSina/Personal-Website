@@ -97,7 +97,7 @@ const About = () => {
         cols={2}
         spacing={"xl"}
         breakpoints={[{ minWidth: "40rem", cols: 3 }]}
-        sx={{ paddingTop: "1.5rem" }}
+        sx={{ padding: "1.5rem 7.5vw 0rem 7.5vw" }}
       >
         {Object.keys(traits).map((trait, i) => {
           return (
