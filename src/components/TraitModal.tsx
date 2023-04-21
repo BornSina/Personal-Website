@@ -75,7 +75,7 @@ const TraitModal = ({
         centered
       >
         <div className={styles.imageContainer}>
-          <Image src={`/images/${title}.webp`} alt={title} fill />
+          <Image src={`/assets/images/traits/${title}.webp`} alt={title} fill />
         </div>
         <div className={styles.contentContainer}>
           {content.map((sentence, i) => {
