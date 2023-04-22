@@ -43,20 +43,6 @@ const LogoCarousel = ({ row }: techStackProps) => {
           />
         ))}
       </div>
-      <div className={styles.logoSlide}>
-        {Object.keys(row).map((tech, i) => (
-          <img
-            src={`/assets/images/logos/${tech}.svg`}
-            alt={tech}
-            key={i}
-            style={{
-              margin: row[tech].margin || "0rem 2rem",
-              width: row[tech].width,
-              height: row[tech].height,
-            }}
-          />
-        ))}
-      </div>
     </div>
   );
 };
