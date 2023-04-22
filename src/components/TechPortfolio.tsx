@@ -73,7 +73,7 @@ let techStack1: techStackRow = {
   },
   mysql: {
     height: "5rem",
-    width: "14rem",
+    width: "12.5rem",
     margin: "0rem 1.25rem -.75rem 1.25rem",
   },
   postgres: {
