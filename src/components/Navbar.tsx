@@ -14,6 +14,7 @@ type navBarProps = {
 const Navbar = ({ menu, menuStatus }: navBarProps) => {
   const [showNavbar, setShowNavbar] = useState(true);
 
+  // Hide navbar on scroll down
   useEffect(() => {
     let prevScrollPos = window.pageYOffset;
 

@@ -3,7 +3,7 @@ import SectionHead from "./SectionHead";
 import { SimpleGrid } from "@mantine/core";
 import TraitModal from "./TraitModal";
 
-interface traitsObj {
+interface traitsObjType {
   [key: string]: {
     color: string;
     content: string[];
@@ -13,7 +13,7 @@ interface traitsObj {
 }
 
 const About = () => {
-  let traits: traitsObj = {
+  let traits: traitsObjType = {
     Ambitious: {
       color: "rgb(255, 191, 0)",
       content: [

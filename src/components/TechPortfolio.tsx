@@ -6,11 +6,11 @@ interface techStackRow {
   [name: string]: {
     height: string;
     width: string;
-    margin?: string;
+    margin: string;
   };
 }
 
-let techStack1: techStackRow = {
+let techStack: techStackRow = {
   html: {
     height: "6rem",
     width: "6rem",
@@ -132,7 +132,7 @@ const TechPortfolio = () => {
   return (
     <section id={styles.techPortfolio}>
       <SectionHead title="Tech Portfolio" />;
-      <LogoCarousel row={techStack1} />
+      <LogoCarousel row={techStack} />
     </section>
   );
 };

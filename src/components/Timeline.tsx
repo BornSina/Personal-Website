@@ -59,13 +59,11 @@ let timelineItems: timelineItem[] = [
 ];
 
 const MyTimeline = () => {
-  const [active, setActive] = useState<number>(4);
-
   return (
     <section id={styles.timeline}>
       <SectionHead title={"Timeline"} />
       <Timeline
-        active={active}
+        active={4}
         lineWidth={12}
         styles={{
           root: {
