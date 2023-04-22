@@ -1,5 +1,12 @@
 .projectCard {
   color: white;
   border: 1px solid white;
-  border-radius: 0.25rem;
+  border-radius: 0.75rem;
+  padding: 2.5rem;
+  margin-bottom: 4rem;
+
+  .projectName {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
 }

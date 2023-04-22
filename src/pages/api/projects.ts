@@ -25,7 +25,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
 
     const repos: string[] = [
       "Portfolio",
-      "Circuit-Breaker-Data-Simulator",
+      "Circuit-Breaker-Simulator",
       "Holy-Sheet",
     ];
     const reposData = await Promise.all(
