@@ -24,7 +24,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
     });
 
     const repos: string[] = [
-      "Portfolio",
+      "Personal-Website",
       "Circuit-Breaker-Simulator",
       "Holy-Sheet",
     ];
