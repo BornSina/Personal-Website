@@ -13,7 +13,7 @@ interface ProjectProps {
 }
 
 const Project = ({ project }: ProjectProps) => {
-  return <div className={styles.project}>Project</div>;
+  return <div className={styles.projectCard}>Project</div>;
 };
 
 export default Project;
