@@ -1,5 +1,6 @@
 import SectionHead from "./SectionHead";
 import LogoCarousel from "./LogoCarousel";
+import ProjectGrid from "./ProjectGrid";
 
 interface techStackRow {
   [name: string]: {
@@ -132,6 +133,7 @@ const TechPortfolio = () => {
     <section>
       <SectionHead title="Tech Portfolio" />;
       <LogoCarousel row={techStack} />
+      <ProjectGrid />
     </section>
   );
 };
