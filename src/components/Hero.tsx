@@ -19,7 +19,7 @@ const HeroSection = () => {
         <Image
           className={styles.avatar}
           alt="Sina at the Vessel in Hudson Yards, New York."
-          src={"/images/Sina.webp"}
+          src={"/assets/images/Sina.webp"}
           width={2000}
           height={2000}
           priority
