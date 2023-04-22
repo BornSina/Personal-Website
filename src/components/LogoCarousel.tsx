@@ -36,7 +36,7 @@ const LogoCarousel = ({ row }: techStackProps) => {
             alt={tech}
             key={i}
             style={{
-              margin: row[tech].margin || "0rem 2rem",
+              margin: row[tech].margin,
               width: row[tech].width,
               height: row[tech].height,
             }}

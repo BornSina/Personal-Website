@@ -43,7 +43,6 @@ const Navbar = ({ menu, menuStatus }: navBarProps) => {
       id={styles.navbar}
       style={{
         transform: showNavbar ? "translateY(0)" : "translateY(-7.5rem)",
-        transition: "transform .15s ease-in-out",
       }}
     >
       <div className={styles.logo}>Sina</div>

@@ -21,6 +21,8 @@ const TraitModal = ({
   font,
 }: TraitModalProps) => {
   const [opened, { open, close }] = useDisclosure(false);
+
+  // Create a MUI theme for custom button color
   const theme = createTheme({
     palette: {
       primary: {

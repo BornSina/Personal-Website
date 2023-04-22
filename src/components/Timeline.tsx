@@ -100,24 +100,10 @@ const MyTimeline = () => {
               >
                 {item.timePeriod}
               </Text>
-              <ul
-                style={{
-                  paddingTop: "1rem",
-                  color: "white",
-                  marginLeft: "2.25rem",
-                  paddingBottom: "1rem",
-                  fontSize: "1.75rem",
-                }}
-              >
+              <ul className={styles.achievements}>
                 {item.Achievements.map((achievement, i) => {
                   return (
-                    <li
-                      key={i}
-                      style={{
-                        marginBottom: "1.5rem",
-                        fontSize: "1.55rem",
-                      }}
-                    >
+                    <li key={i} className={styles.achievement}>
                       {achievement}
                     </li>
                   );

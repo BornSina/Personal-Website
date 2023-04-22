@@ -1,5 +1,4 @@
 import SectionHead from "./SectionHead";
-import styles from "../styles/techPortfolio.module.scss";
 import LogoCarousel from "./LogoCarousel";
 
 interface techStackRow {
@@ -130,7 +129,7 @@ let techStack: techStackRow = {
 
 const TechPortfolio = () => {
   return (
-    <section id={styles.techPortfolio}>
+    <section>
       <SectionHead title="Tech Portfolio" />;
       <LogoCarousel row={techStack} />
     </section>
