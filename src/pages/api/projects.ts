@@ -1,6 +1,6 @@
 // pages/api/repo.ts
 import { NextApiRequest, NextApiResponse } from "next";
-import { Octokit } from "octokit";
+import { Octokit } from "@octokit/rest";
 
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   // Validate the request method
@@ -23,15 +23,26 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
       auth: process.env.GITHUB_ACCESS_TOKEN,
     });
 
-    const { data } = await octokit.rest.repos.listForUser({
-      username: owner,
-      type: "owner",
-      sort: "updated",
-      direction: "desc",
-      per_page: 100,
-    });
+    const repos: string[] = [
+      "Portfolio",
+      "Circuit-Breaker-Data-Simulator",
+      "Holy-Sheet",
+    ];
+    const reposData = await Promise.all(
+      repos.map((repo) =>
+        octokit.rest.repos.get({ owner, repo }).then((res) => {
+          return {
+            name: res.data.name,
+            description: res.data.description,
+            url: res.data.html_url,
+            stars: res.data.stargazers_count,
+            forks: res.data.forks_count,
+          };
+        })
+      )
+    );
 
-    res.status(200).json(data);
+    res.status(200).json(reposData);
   } catch (error) {
     console.error(error);
     res

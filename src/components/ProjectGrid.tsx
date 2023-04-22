@@ -3,14 +3,21 @@ import Project from "./Project";
 import { SimpleGrid } from "@mantine/core";
 import axios from "axios";
 
+interface Repo {
+  name: string;
+  description: string;
+  url: string;
+  stars: number;
+  forks: number;
+}
+
 const ProjectGrid = () => {
-  const [projects, setProjects] = useState([]);
+  const [projects, setProjects] = useState<Repo[]>([]);
 
   useEffect(() => {
     axios
       .get("/api/projects")
       .then(({ data }) => {
-        console.log(data);
         setProjects(data);
       })
       .catch((error) => {
@@ -28,7 +35,9 @@ const ProjectGrid = () => {
       ]}
       sx={{ padding: "0rem 7.5vw" }}
     >
-      <Project />
+      {projects.map((project, i) => (
+        <Project key={i} project={project} />
+      ))}
     </SimpleGrid>
   );
 };
