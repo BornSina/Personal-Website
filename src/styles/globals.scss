@@ -28,6 +28,30 @@ body {
 
 .mantine-Drawer-content {
   background-color: rgb(39, 51, 75);
+
+  .menuContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 88vh;
+
+    .menuItem {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 25%;
+      width: 90%;
+      color: white;
+      font-size: 3rem;
+      background: none;
+      border: none;
+
+      &:active {
+        color: grey;
+      }
+    }
+  }
 }
 
 // <-------------------- Animation Classes --------------------> //

@@ -5,6 +5,27 @@ import Navbar from "../components/Navbar";
 import { useDisclosure } from "@mantine/hooks";
 import { Drawer } from "@mantine/core";
 
+interface MenuConfig {
+  [name: string]: {
+    position: number;
+  };
+}
+
+const menuItems: MenuConfig = {
+  Home: {
+    position: 0,
+  },
+  About: {
+    position: 875,
+  },
+  Timeline: {
+    position: 1225,
+  },
+  "Tech Portfolio": {
+    position: 3000,
+  },
+};
+
 function MyApp({ Component, pageProps }: AppProps) {
   const [menuStatus, handlers] = useDisclosure(false);
 
@@ -25,7 +46,30 @@ function MyApp({ Component, pageProps }: AppProps) {
         withCloseButton={false}
         size={"100%"}
         transitionProps={{ duration: 250, transition: "slide-left" }}
-      ></Drawer>
+      >
+        <div className="menuContainer">
+          {Object.keys(menuItems).map((item) => {
+            return (
+              <button
+                key={item}
+                className="menuItem"
+                style={{
+                  borderTop: item === "Home" ? "none" : "1px solid grey",
+                }}
+                onClick={() => {
+                  window.scrollTo({
+                    top: menuItems[item].position,
+                    behavior: "smooth",
+                  });
+                  handlers.close();
+                }}
+              >
+                {item}
+              </button>
+            );
+          })}
+        </div>
+      </Drawer>
     </>
   );
 }
