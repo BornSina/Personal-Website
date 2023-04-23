@@ -15,7 +15,10 @@ interface ProjectProps {
 const Project = ({ project }: ProjectProps) => {
   return (
     <div className={styles.projectCard}>
-      <div className={styles.projectName}>{project.name}</div>
+      <div className={styles.projectName}>
+        {project.name.split("-").join(" ")}
+      </div>
+      <div className={styles.description}>{project.description}</div>
     </div>
   );
 };
