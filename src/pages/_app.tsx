@@ -16,13 +16,13 @@ const menuItems: MenuConfig = {
     position: 0,
   },
   About: {
-    position: 875,
+    position: 820,
   },
   Timeline: {
-    position: 1225,
+    position: 1175,
   },
   "Tech Portfolio": {
-    position: 3000,
+    position: 2950,
   },
 };
 
