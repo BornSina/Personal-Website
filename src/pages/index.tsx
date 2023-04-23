@@ -13,21 +13,6 @@ const Home: NextPage = () => {
       element.classList.add("slideUp");
     });
   }, []);
-  // Intersection Observer SlideRight Animations
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("slideRight");
-        }
-      });
-    });
-
-    let hiddenLeft = document.querySelectorAll(".hiddenLeft");
-    hiddenLeft.forEach((element) => {
-      observer.observe(element);
-    });
-  }, []);
 
   return (
     <>

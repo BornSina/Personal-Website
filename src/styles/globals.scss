@@ -43,18 +43,6 @@ body {
   transform: translateY(0rem);
 }
 
-.hiddenLeft {
-  opacity: 0;
-  transform: translateX(-2rem);
-  transition: all 0.4s;
-  transition-delay: 0.1s;
-}
-
-.slideRight {
-  opacity: 1;
-  transform: translateX(0rem);
-}
-
 // <-------------------- Media Queries --------------------> //
 
 @media (prefers-reduced-motion) {
