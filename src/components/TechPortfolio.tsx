@@ -14,12 +14,12 @@ let techStack: logoConfigObj = {
     width: "6rem",
     margin: "0rem 1.75rem -.4rem .25rem",
   },
-  js: {
+  javascript: {
     height: "4.5rem",
     width: "4.5rem",
     margin: "-.1rem 1.5rem 0rem 0rem",
   },
-  ts: {
+  typescript: {
     height: "4.6rem",
     width: "4.6rem",
     margin: "0rem 1.2rem -.1rem 1rem",
@@ -39,7 +39,7 @@ let techStack: logoConfigObj = {
     width: "6.25rem",
     margin: "0rem .75rem -1rem 1.5rem",
   },
-  mui: {
+  "material-ui": {
     height: "5.5rem",
     width: "5.5rem",
     margin: "0rem 1.4rem -.9rem 1rem",
@@ -79,7 +79,7 @@ let techStack: logoConfigObj = {
     width: "17.5rem",
     margin: "0rem 1rem -.15rem .8rem",
   },
-  db2: {
+  "ibm-db2": {
     height: "5rem",
     width: "11.5rem",
     margin: "0rem 1.45rem -.25rem .65rem",
@@ -99,22 +99,22 @@ let techStack: logoConfigObj = {
     width: "5.5rem",
     margin: "0rem 1rem -.5rem .5rem",
   },
-  redHat: {
+  "red-hat": {
     height: "6rem",
     width: "6rem",
     margin: "0rem 1.5rem -.65rem 1.6rem",
   },
-  ocp: {
+  openshift: {
     height: "5.5rem",
     width: "5.5rem",
     margin: "0rem 1.4rem -.3rem 1rem",
   },
-  ibmCloud: {
+  "ibm-cloud": {
     height: "6.25rem",
     width: "6.25rem",
     margin: "0rem 1.1rem -.5rem 1.1rem",
   },
-  gcp: {
+  "google-cloud": {
     height: "5.5rem",
     width: "5.5rem",
     margin: "0rem 1.5rem -.25rem 1.5rem",

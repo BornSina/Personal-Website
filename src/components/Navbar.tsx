@@ -49,6 +49,7 @@ const Navbar = ({ menu, menuStatus }: navBarProps) => {
           marginRight: "2.5rem",
           zIndex: 10,
         }}
+        aria-label={"Toggle Menu"}
       />
     </div>
   );

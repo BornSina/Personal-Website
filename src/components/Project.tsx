@@ -2,12 +2,12 @@ import styles from "../styles/project.module.scss";
 import { logoConfigObj, ProjectTech, ProjectProps } from "../types";
 
 let techLogos: logoConfigObj = {
-  js: {
+  javascript: {
     height: "2.2rem",
     width: "2.2rem",
     margin: "0rem 1rem 0rem 0rem",
   },
-  ts: {
+  typescript: {
     height: "2.3rem",
     width: "2.3rem",
     margin: "0rem 1rem 0rem 0rem",
@@ -37,7 +37,7 @@ let techLogos: logoConfigObj = {
     width: "2.3rem",
     margin: "0rem 1rem 0rem 0rem",
   },
-  mui: {
+  "material-ui": {
     height: "2.65rem",
     width: "2.65rem",
     margin: "0rem 1rem -.3rem 0rem",
@@ -72,7 +72,7 @@ let techLogos: logoConfigObj = {
     width: "5.5rem",
     margin: "0rem 1rem -.5rem .5rem",
   },
-  gcp: {
+  "google-cloud": {
     height: "5.5rem",
     width: "5.5rem",
     margin: "0rem 1.5rem -.25rem 1.5rem",
@@ -80,9 +80,9 @@ let techLogos: logoConfigObj = {
 };
 
 const projectTech: ProjectTech = {
-  "Personal-Website": ["ts", "next", "sass", "mantine", "mui"],
+  "Personal-Website": ["typescript", "next", "sass", "mantine", "material-ui"],
   "Circuit-Breaker-Simulator": ["python"],
-  "Holy-Sheet": ["js", "react", "sass", "node", "mongo"],
+  "Holy-Sheet": ["javascript", "react", "sass", "node", "mongo"],
 };
 
 const Project = ({ project }: ProjectProps) => {
@@ -103,6 +103,7 @@ const Project = ({ project }: ProjectProps) => {
                 margin: techLogos[tech].margin,
               }}
               key={i}
+              alt={tech}
             />
           ))}
       </div>
