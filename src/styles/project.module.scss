@@ -1,14 +1,15 @@
 .projectCard {
-  height: 23rem;
+  height: 28rem;
   background-color: rgba(255, 255, 255, 0.075);
   color: white;
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 0.75rem;
   margin-bottom: 2.5rem;
-  position: relative;
+  display: flex;
+  flex-direction: column;
 
   .projectName {
-    font-size: 2rem;
+    font-size: 1.9rem;
     margin: 1.25rem 2rem 0rem 2rem;
     padding-bottom: 1rem;
     border-bottom: rgba(255, 255, 255, 0.5) 1px solid;
@@ -18,15 +19,14 @@
     margin: 1rem 2rem 0rem 2rem;
     font-size: 1.5rem;
     line-height: 2.5rem;
+    flex-grow: 1;
   }
 
   .techList {
-    position: absolute;
-    bottom: 0rem;
     height: 5rem;
     width: calc(100% - 4rem);
     border-top: solid 1px rgba(255, 255, 255, 0.5);
     margin: 0rem 2rem 0rem 2rem;
-    padding-top: 0.5rem;
+    padding-top: 0.75rem;
   }
 }

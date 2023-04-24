@@ -54,7 +54,7 @@ function MyApp({ Component, pageProps }: AppProps) {
                 key={item}
                 className="menuItem"
                 style={{
-                  borderTop: item === "Home" ? "none" : "1px solid grey",
+                  borderBottom: "1px solid grey",
                 }}
                 onClick={() => {
                   window.scrollTo({
