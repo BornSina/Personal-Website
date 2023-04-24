@@ -99,18 +99,20 @@ const About = () => {
         breakpoints={[{ minWidth: "40rem", cols: 3 }]}
         sx={{ padding: "1.5rem 7.5vw 0rem 7.5vw" }}
       >
-        {Object.keys(traits).map((trait, i) => {
-          return (
-            <TraitModal
-              title={trait}
-              content={traits[trait].content}
-              skills={traits[trait].skills}
-              color={traits[trait].color}
-              font={traits[trait].font ? traits[trait].font : "inherit"}
-              key={i}
-            />
-          );
-        })}
+        {Object.entries(traits).map(
+          ([trait, { content, skills, color, font }], i) => {
+            return (
+              <TraitModal
+                title={trait}
+                content={content}
+                skills={skills}
+                color={color}
+                font={font ? font : "inherit"}
+                key={i}
+              />
+            );
+          }
+        )}
       </SimpleGrid>
     </section>
   );
