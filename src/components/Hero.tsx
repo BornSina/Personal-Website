@@ -14,7 +14,7 @@ const theme = createTheme({
 
 const HeroSection = () => {
   return (
-    <section className={styles.hero}>
+    <section id="Home" className={styles.hero}>
       <div className={styles.avatarContainer}>
         <Image
           className={styles.avatar}
@@ -54,7 +54,6 @@ const HeroSection = () => {
             width: "15rem",
             height: "4rem",
             fontSize: "1.6rem",
-            margin: "0rem 0rem 10rem 0rem",
           }}
         >
           Resume

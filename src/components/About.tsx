@@ -91,7 +91,7 @@ const About = () => {
   };
 
   return (
-    <section id={styles.about}>
+    <section id="About" className={styles.about}>
       <SectionHead title={"About"} />
       <SimpleGrid
         cols={2}

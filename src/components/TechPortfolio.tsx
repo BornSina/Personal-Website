@@ -130,7 +130,7 @@ let techStack: techStackRow = {
 
 const TechPortfolio = () => {
   return (
-    <section>
+    <section id="Portfolio" style={{ paddingTop: "8rem", marginTop: "2rem" }}>
       <SectionHead title="Tech Portfolio" />;
       <LogoCarousel row={techStack} />
       <ProjectGrid />

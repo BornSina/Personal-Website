@@ -5,26 +5,7 @@ import Navbar from "../components/Navbar";
 import { useDisclosure } from "@mantine/hooks";
 import { Drawer } from "@mantine/core";
 
-interface MenuConfig {
-  [name: string]: {
-    position: number;
-  };
-}
-
-const menuItems: MenuConfig = {
-  Home: {
-    position: 0,
-  },
-  About: {
-    position: 820,
-  },
-  Timeline: {
-    position: 1175,
-  },
-  "Tech Portfolio": {
-    position: 2950,
-  },
-};
+const menuItems: string[] = ["Home", "About", "Timeline", "Portfolio"];
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [menuStatus, handlers] = useDisclosure(false);
@@ -48,7 +29,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         transitionProps={{ duration: 250, transition: "slide-left" }}
       >
         <div className="menuContainer">
-          {Object.keys(menuItems).map((item) => {
+          {menuItems.map((item) => {
             return (
               <button
                 key={item}
@@ -57,10 +38,13 @@ function MyApp({ Component, pageProps }: AppProps) {
                   borderBottom: "1px solid grey",
                 }}
                 onClick={() => {
-                  window.scrollTo({
-                    top: menuItems[item].position,
-                    behavior: "smooth",
-                  });
+                  const targetElement = document.getElementById(item);
+                  if (targetElement) {
+                    targetElement.scrollIntoView({
+                      behavior: "smooth",
+                      block: "start",
+                    });
+                  }
                   handlers.close();
                 }}
               >

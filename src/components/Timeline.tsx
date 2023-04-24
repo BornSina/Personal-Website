@@ -60,7 +60,7 @@ let timelineItems: timelineItem[] = [
 
 const MyTimeline = () => {
   return (
-    <section id={styles.timeline}>
+    <section id="Timeline" className={styles.timeline}>
       <SectionHead title={"Timeline"} />
       <Timeline
         active={4}
