@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Timeline, Text } from "@mantine/core";
 import SectionHead from "./SectionHead";
 import styles from "../styles/timeline.module.scss";
@@ -67,7 +66,6 @@ const MyTimeline = () => {
         lineWidth={12}
         styles={{
           root: {
-            marginLeft: "1rem",
             margin: "1.5rem 9vw 0rem 9vw",
           },
           item: {
