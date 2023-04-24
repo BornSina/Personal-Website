@@ -34,9 +34,6 @@ function MyApp({ Component, pageProps }: AppProps) {
               <button
                 key={item}
                 className="menuItem"
-                style={{
-                  borderBottom: "1px solid grey",
-                }}
                 onClick={() => {
                   const targetElement = document.getElementById(item);
                   if (targetElement) {

@@ -46,9 +46,17 @@ body {
       font-size: 2.75rem;
       background: none;
       border: none;
+      border-bottom: 1px solid grey;
+      border-radius: 0.15rem;
+
+      &:hover {
+        cursor: pointer;
+        background-color: rgb(34, 45, 66);
+      }
 
       &:active {
         color: grey;
+        background-color: rgb(25, 33, 48);
       }
     }
   }
