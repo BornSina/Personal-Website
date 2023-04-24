@@ -1,26 +1,7 @@
 import styles from "../styles/project.module.scss";
+import { logoConfigObj, ProjectTech, ProjectProps } from "../types";
 
-interface Repo {
-  name: string;
-  description: string;
-  url: string;
-  stars: number;
-  forks: number;
-}
-
-interface ProjectProps {
-  project: Repo;
-}
-
-interface TechLogosStyleObj {
-  [name: string]: {
-    height: string;
-    width: string;
-    margin: string;
-  };
-}
-
-let techLogos: TechLogosStyleObj = {
+let techLogos: logoConfigObj = {
   js: {
     height: "2.2rem",
     width: "2.2rem",
@@ -76,20 +57,10 @@ let techLogos: TechLogosStyleObj = {
     width: "12.5rem",
     margin: "0rem 1.25rem -.75rem 1.25rem",
   },
-  postgres: {
-    height: "5.5rem",
-    width: "5.5rem",
-    margin: "0rem 1.25rem -.6rem .25rem",
-  },
   mongo: {
     height: "3rem",
     width: "8rem",
     margin: "-.75rem 1rem -.6rem 0rem",
-  },
-  neo4j: {
-    height: "5.5rem",
-    width: "5.5rem",
-    margin: "0rem .75rem -.5rem 1rem",
   },
   docker: {
     height: "9rem",
@@ -107,9 +78,6 @@ let techLogos: TechLogosStyleObj = {
     margin: "0rem 1.5rem -.25rem 1.5rem",
   },
 };
-interface ProjectTech {
-  [project: string]: string[];
-}
 
 const projectTech: ProjectTech = {
   "Personal-Website": ["ts", "next", "sass", "mantine", "mui"],

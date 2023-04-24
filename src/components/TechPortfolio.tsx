@@ -1,16 +1,9 @@
 import SectionHead from "./SectionHead";
 import LogoCarousel from "./LogoCarousel";
 import ProjectGrid from "./ProjectGrid";
+import { logoConfigObj } from "../types";
 
-interface techStackRow {
-  [name: string]: {
-    height: string;
-    width: string;
-    margin: string;
-  };
-}
-
-let techStack: techStackRow = {
+let techStack: logoConfigObj = {
   html: {
     height: "6rem",
     width: "6rem",
@@ -132,7 +125,7 @@ const TechPortfolio = () => {
   return (
     <section id="Portfolio" style={{ paddingTop: "8rem", marginTop: "2rem" }}>
       <SectionHead title="Tech Portfolio" />;
-      <LogoCarousel row={techStack} />
+      <LogoCarousel techStack={techStack} />
       <ProjectGrid />
     </section>
   );

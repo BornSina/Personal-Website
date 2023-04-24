@@ -2,18 +2,10 @@ import styles from "../styles/about.module.scss";
 import SectionHead from "./SectionHead";
 import { SimpleGrid } from "@mantine/core";
 import TraitModal from "./TraitModal";
-
-interface traitsObjType {
-  [key: string]: {
-    color: string;
-    content: string[];
-    skills: string[];
-    font?: string;
-  };
-}
+import { traitsConfigObj } from "../types";
 
 const About = () => {
-  let traits: traitsObjType = {
+  let traits: traitsConfigObj = {
     Ambitious: {
       color: "rgb(255, 191, 0)",
       content: [

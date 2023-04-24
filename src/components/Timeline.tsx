@@ -1,13 +1,7 @@
 import { Timeline, Text } from "@mantine/core";
 import SectionHead from "./SectionHead";
 import styles from "../styles/timeline.module.scss";
-
-interface timelineItem {
-  role: string;
-  organization: string;
-  timePeriod: string;
-  Achievements: string[];
-}
+import { timelineItem } from "../types";
 
 let timelineItems: timelineItem[] = [
   {

@@ -1,15 +1,7 @@
 import styles from "../styles/navbar.module.scss";
 import { Burger } from "@mantine/core";
 import { useEffect, useState } from "react";
-
-type navBarProps = {
-  menuStatus: boolean;
-  menu: {
-    open: Function;
-    close: Function;
-    toggle: Function;
-  };
-};
+import { navBarProps } from "../types";
 
 const Navbar = ({ menu, menuStatus }: navBarProps) => {
   const [showNavbar, setShowNavbar] = useState(true);

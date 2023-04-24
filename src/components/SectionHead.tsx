@@ -1,8 +1,5 @@
 import styles from "../styles/sectionHead.module.scss";
-
-interface SectionHeadProps {
-  title: string;
-}
+import { SectionHeadProps } from "../types";
 
 const SectionHead = ({ title }: SectionHeadProps) => {
   return (

@@ -2,14 +2,7 @@ import { useEffect, useState } from "react";
 import Project from "./Project";
 import { SimpleGrid } from "@mantine/core";
 import axios from "axios";
-
-interface Repo {
-  name: string;
-  description: string;
-  url: string;
-  stars: number;
-  forks: number;
-}
+import { Repo } from "../types";
 
 const ProjectGrid = () => {
   const [projects, setProjects] = useState<Repo[]>([]);

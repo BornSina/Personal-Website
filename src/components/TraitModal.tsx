@@ -4,14 +4,7 @@ import styles from "../styles/traitModal.module.scss";
 import Button from "@mui/material/Button";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Image from "next/image";
-
-interface TraitModalProps {
-  title: string;
-  color: string;
-  content: string[];
-  skills: string[];
-  font?: string;
-}
+import { TraitModalProps } from "../types";
 
 const TraitModal = ({
   title,
