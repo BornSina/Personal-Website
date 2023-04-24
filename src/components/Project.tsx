@@ -12,7 +12,7 @@ interface ProjectProps {
   project: Repo;
 }
 
-interface TechLogosType {
+interface TechLogosStyleObj {
   [name: string]: {
     height: string;
     width: string;
@@ -20,17 +20,7 @@ interface TechLogosType {
   };
 }
 
-let techLogos: TechLogosType = {
-  html: {
-    height: "6rem",
-    width: "6rem",
-    margin: "0rem 0.5rem -.2rem 0rem",
-  },
-  css: {
-    height: "6rem",
-    width: "6rem",
-    margin: "0rem 1.75rem -.4rem .25rem",
-  },
+let techLogos: TechLogosStyleObj = {
   js: {
     height: "2.2rem",
     width: "2.2rem",
@@ -41,7 +31,7 @@ let techLogos: TechLogosType = {
     width: "2.3rem",
     margin: "0rem 1rem 0rem 0rem",
   },
-  nodejs: {
+  node: {
     height: "2.45rem",
     width: "2.45rem",
     margin: "0rem 1rem -.2rem 0rem",
@@ -51,25 +41,25 @@ let techLogos: TechLogosType = {
     width: "2.45rem",
     margin: "0rem 1rem -.2rem 0rem",
   },
+  next: {
+    height: "2.5rem",
+    width: "7.25rem",
+    margin: "0rem 1rem -.35rem 0rem",
+  },
   sass: {
     height: "2.8rem",
     width: "2.8rem",
-    margin: "0rem 1rem -.35rem 0rem",
+    margin: "0rem 1rem -.25rem 0rem",
+  },
+  mantine: {
+    height: "2.3rem",
+    width: "2.3rem",
+    margin: "0rem 1rem 0rem 0rem",
   },
   mui: {
     height: "2.65rem",
     width: "2.65rem",
     margin: "0rem 1rem -.3rem 0rem",
-  },
-  tailwind: {
-    height: "7rem",
-    width: "7rem",
-    margin: "0rem .5rem -1.5rem 0rem",
-  },
-  bootstrap: {
-    height: "4.5rem",
-    width: "6.5rem",
-    margin: "0rem 1.1rem -.25rem .75rem",
   },
   python: {
     height: "2.75rem",
@@ -96,11 +86,6 @@ let techLogos: TechLogosType = {
     width: "8rem",
     margin: "-.75rem 1rem -.6rem 0rem",
   },
-  db2: {
-    height: "5rem",
-    width: "11.5rem",
-    margin: "0rem 1.45rem -.25rem .65rem",
-  },
   neo4j: {
     height: "5.5rem",
     width: "5.5rem",
@@ -116,21 +101,6 @@ let techLogos: TechLogosType = {
     width: "5.5rem",
     margin: "0rem 1rem -.5rem .5rem",
   },
-  redHat: {
-    height: "6rem",
-    width: "6rem",
-    margin: "0rem 1.5rem -.65rem 1.6rem",
-  },
-  ocp: {
-    height: "5.5rem",
-    width: "5.5rem",
-    margin: "0rem 1.4rem -.3rem 1rem",
-  },
-  ibmCloud: {
-    height: "6.25rem",
-    width: "6.25rem",
-    margin: "0rem 1.1rem -.5rem 1.1rem",
-  },
   gcp: {
     height: "5.5rem",
     width: "5.5rem",
@@ -142,9 +112,9 @@ interface ProjectTech {
 }
 
 const projectTech: ProjectTech = {
-  "Personal-Website": ["ts", "react", "sass", "mui"],
+  "Personal-Website": ["ts", "next", "sass", "mantine", "mui"],
   "Circuit-Breaker-Simulator": ["python"],
-  "Holy-Sheet": ["js", "react", "sass", "nodejs", "mongo"],
+  "Holy-Sheet": ["js", "react", "sass", "node", "mongo"],
 };
 
 const Project = ({ project }: ProjectProps) => {

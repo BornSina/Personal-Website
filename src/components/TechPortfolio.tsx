@@ -31,7 +31,7 @@ let techStack: techStackRow = {
     width: "4.6rem",
     margin: "0rem 1.2rem -.1rem 1rem",
   },
-  nodejs: {
+  node: {
     height: "4.75rem",
     width: "4.75rem",
     margin: "0rem 1.2rem -.15rem 1.2rem",
