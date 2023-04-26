@@ -22,9 +22,9 @@ const ProjectGrid = () => {
     <SimpleGrid
       cols={3}
       breakpoints={[
-        { maxWidth: "62rem", cols: 3, spacing: "md" },
-        { maxWidth: "48rem", cols: 2, spacing: "sm" },
-        { maxWidth: "36rem", cols: 1, spacing: "sm" },
+        { maxWidth: "75rem", cols: 3, spacing: "md" },
+        { maxWidth: "67.5rem", cols: 2, spacing: "sm" },
+        { maxWidth: "42.5rem", cols: 1, spacing: "sm" },
       ]}
       sx={{ padding: "0rem 7.5vw" }}
     >
