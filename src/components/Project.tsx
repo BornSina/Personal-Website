@@ -13,8 +13,8 @@ let techLogos: logoConfigObj = {
     margin: "0rem 1rem 0rem 0rem",
   },
   node: {
-    height: "2.45rem",
-    width: "2.45rem",
+    height: "2.4rem",
+    width: "2.4rem",
     margin: "0rem 1rem -.2rem 0rem",
   },
   react: {
@@ -24,23 +24,23 @@ let techLogos: logoConfigObj = {
   },
   next: {
     height: "2.5rem",
-    width: "7.25rem",
+    width: "9rem",
     margin: "0rem 1rem -.35rem 0rem",
   },
   sass: {
-    height: "2.8rem",
-    width: "2.8rem",
-    margin: "0rem 1rem -.25rem 0rem",
+    height: "3rem",
+    width: "3rem",
+    margin: "0rem 1rem -.3rem 0rem",
   },
   mantine: {
-    height: "2.3rem",
-    width: "2.3rem",
+    height: "2.35rem",
+    width: "2.35rem",
     margin: "0rem 1rem 0rem 0rem",
   },
   "material-ui": {
     height: "2.65rem",
     width: "2.65rem",
-    margin: "0rem 1rem -.3rem 0rem",
+    margin: "0rem 1rem -.25rem 0rem",
   },
   python: {
     height: "2.75rem",

@@ -1,16 +1,14 @@
-// pages/api/repo.ts
 import { NextApiRequest, NextApiResponse } from "next";
 import { Octokit } from "@octokit/rest";
 
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
-  // Validate the request method
   if (req.method !== "GET") {
     res.setHeader("Allow", ["GET"]);
     res.status(405).end(`Method ${req.method} Not Allowed`);
     return;
   }
 
-  const owner = process.env.GITHUB_USER;
+  const owner = process.env.GH_USER;
   if (!owner) {
     res.status(400).json({
       error: "Missing github user in environment variables",
@@ -20,7 +18,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
 
   try {
     const octokit = new Octokit({
-      auth: process.env.GITHUB_ACCESS_TOKEN,
+      auth: process.env.GH_TOKEN,
     });
 
     const repos: string[] = [
