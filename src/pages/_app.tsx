@@ -14,9 +14,15 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>Sina Nikmaram</title>
-        <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="Sina Nikmaram's Portfolio" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="keywords" content="keyword1, keyword2, keyword3"></meta>
+        <meta name="author" content="Your Name or Company Name"></meta>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Fondamento&family=IBM+Plex+Mono:wght@500&family=Open+Sans&family=Playfair+Display&family=Shantell+Sans&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       <Navbar menuStatus={menuStatus} menu={handlers} />
       <Component {...pageProps} />
