@@ -1,3 +1,5 @@
+![Image Description](./public/assets/images/Sina-Portfolio-screenshot.png)
+
 # Sina Nikmaram's Personal Portfolio Website
 
 This repository contains the source code for Sina Nikmaram's personal portfolio website, showcasing his skills, experiences, projects, and contact information.
