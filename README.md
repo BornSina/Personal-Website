@@ -23,21 +23,21 @@ To run the project locally, follow these steps:
 
 1.  Clone the repository to your local machine:
 
-        `git clone https://github.com/BornSina/Personal-Website.git`
+        git clone https://github.com/BornSina/Personal-Website.git
 
 2.  Navigate to the project folder:
 
-        `cd portfolio-website`
+        cd portfolio-website
 
 3.  Install the required dependencies:
 
-        `npm install`
+        npm install
 
 4.  Start the development server.
 
-        `npm start`
+        npm start
 
-5.  Open your browser and navigate to `http://localhost:3000`.
+5.  Open your browser and navigate to: http://localhost:3000
 
 ## Features
 
