@@ -1,4 +1,4 @@
-![Image Description](./public/assets/images/Sina-Portfolio-screenshot.png)
+![Sina's Portfolio Screenshot](./public/assets/images/Sina-Portfolio-Screenshot.png)
 
 # Sina Nikmaram's Personal Portfolio Website
 
