@@ -17,7 +17,7 @@ This website is constantly being updated and improved to better represent Sina's
 
 ## Introduction
 
-Sina Nikmaram's personal portfolio website is a platform for showcasing his software engineering skills, work experience, and personal projects. The website is designed with a clean and responsive user interface, making it easy for visitors to navigate and explore Sina's career achievements and interests.
+This website is a platform for showcasing Sina's software engineering skills, work experience, and personal projects. It has been designed with a clean and responsive user interface, making it easy for visitors to navigate and explore Sina's career achievements and interests.
 
 ## Getting Started
 
