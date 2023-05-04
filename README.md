@@ -1,6 +1,8 @@
-# John Doe's Personal Portfolio Website
+# Sina Nikmaram's Personal Portfolio Website
 
-This repository contains the source code for John Doe's personal portfolio website, showcasing their skills, experiences, projects, and contact information. As a software engineer, John Doe is constantly updating and improving the website to better represent their professional accomplishments and interests.
+This repository contains the source code for Sina Nikmaram's personal portfolio website, showcasing his skills, experiences, projects, and contact information.
+
+This website is constantly being updated and improved to better represent Sina's professional accomplishments and interests.
 
 ## Table of Contents
 
@@ -13,7 +15,7 @@ This repository contains the source code for John Doe's personal portfolio websi
 
 ## Introduction
 
-John Doe's personal portfolio website is a platform for showcasing their software engineering skills, work experience, and personal projects. The website is designed with a clean and responsive user interface, making it easy for visitors to navigate and explore John's career achievements and interests.
+Sina Nikmaram's personal portfolio website is a platform for showcasing his software engineering skills, work experience, and personal projects. The website is designed with a clean and responsive user interface, making it easy for visitors to navigate and explore Sina's career achievements and interests.
 
 ## Getting Started
 
