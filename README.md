@@ -13,7 +13,6 @@ This website is constantly being updated and improved to better represent Sina's
 3. [Features](#features)
 4. [Technologies Used](#technologies-used)
 5. [Contact Information](#contact-information)
-6. [License](#license)
 
 ## Introduction
 
